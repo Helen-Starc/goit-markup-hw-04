@@ -167,14 +167,20 @@ img {
 
 /* ------------hero------------ */
 .hero {
-	background-color: var(--dark-background-color);
 	text-align: center;
+}
 
-	min-height: 600px;
+.container-fluid {
+	height: 600px;
+	background-color: var(--dark-background-color);
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	padding-top: 200px;
 }
 
-.hero > .container {
+.hero .container {
 	padding-right: 252px;
 	padding-left: 252px;
 }
