@@ -168,16 +168,16 @@ img {
 /* ------------hero------------ */
 .hero {
 	text-align: center;
-}
 
-.container-fluid {
-	height: 600px;
+	max-width: 1600px;
+	padding-top: 200px;
+	padding-bottom: 280px;
+	margin: 0 auto;
 	background-color: var(--dark-background-color);
-	background-image: url(../img/hero.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding-top: 200px;
 }
 
 .hero .container {
@@ -299,6 +299,39 @@ img {
 	color: var(--description-text-color);
 }
 
+/* ------------clients------------ */
+
+.clients {
+}
+.clients-title {
+}
+.clients-list {
+	display: flex;
+	justify-content: space-between;
+}
+.clients-item {
+}
+.clients-link {
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #afb1b8;
+}
+.clients-link:hover,
+.clients-link:focus {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+.clients-icon {
+	display: block;
+	--icon-color: currentColor;
+	color: var(--icon-color);
+}
+
 /* ------------footer------------ */
 
 .footer {
@@ -388,6 +421,11 @@ img {
 	/* calc((100% - кол-во_зазоров_в_строке * значение_
 	одного_зазора) / кол-во_элементов_в_строке) */
 	flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-list .item-wrap {
